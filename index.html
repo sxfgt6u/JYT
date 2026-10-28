@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>數位商管人才 | 智光商工 自我介紹</title>
+  <meta name="description" content="來自智光商工的數位商管跨領域人才，熱愛商業經營、電子商務與智慧科技。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">BIZTECH</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link" data-section="關於">關於</a></li>
+      <li><a href="#skills" class="nav-link" data-section="技能">技能</a></li>
+      <li><a href="#learning" class="nav-link" data-section="學習">學習</a></li>
+      <li><a href="#vision" class="nav-link" data-section="願景">願景</a></li>
+      <li><a href="#contact" class="nav-link active" data-section="聯繫">聯繫</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">ONLINE</span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">BIZTECH</div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">◈</span>
+        <span>智光商工 · 數位商管</span>
+      </div>
+
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-ring ring-outer"></div>
+        <div class="avatar-ring ring-middle"></div>
+        <div class="avatar-ring ring-inner"></div>
+        <div class="avatar-hex">
+          <img src="profile_avatar.png" alt="Profile Avatar" class="avatar-img" />
+          <div class="avatar-scan"></div>
+        </div>
+        <div class="avatar-data-point dp1">
+          <span class="dp-label">E-COMMERCE</span>
+          <div class="dp-line"></div>
+        </div>
+        <div class="avatar-data-point dp2">
+          <span class="dp-label">FINTECH</span>
+          <div class="dp-line"></div>
+        </div>
+        <div class="avatar-data-point dp3">
+          <span class="dp-label">SMART TECH</span>
+          <div class="dp-line"></div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <div class="hero-subtitle typewriter" id="typewriter"></div>
+        <h1 class="hero-title">
+          <span class="title-line">數位商管</span>
+          <span class="title-line accent">跨領域人才</span>
+        </h1>
+        <p class="hero-desc">
+          商業 × 科技 × 電商 的完美交匯點<br />
+          以智識驅動創新，以熱情點燃未來
+        </p>
+        <div class="hero-tags">
+          <span class="tag">🏢 商業經營</span>
+          <span class="tag">🛒 電子商務</span>
+          <span class="tag">🤖 智慧科技</span>
+          <span class="tag">💻 網頁開發</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#skills" class="btn-primary" id="explore-btn">
+            <span>探索我的技能</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn-secondary" id="contact-btn">聯繫我</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Stats -->
+    <div class="floating-stats">
+      <div class="stat-card" id="stat1">
+        <div class="stat-value counter" data-target="4">0</div>
+        <div class="stat-label">核心領域</div>
+      </div>
+      <div class="stat-card" id="stat2">
+        <div class="stat-value counter" data-target="360">0</div>
+        <div class="stat-label">全方位視野</div>
+      </div>
+      <div class="stat-card" id="stat3">
+        <div class="stat-value">∞</div>
+        <div class="stat-label">成長潛力</div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL DOWN</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">// ABOUT ME</div>
+        <h2 class="section-title">關於我</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card main-card" id="about-main">
+          <div class="card-glow"></div>
+          <div class="card-icon">⚡</div>
+          <h3>我的故事</h3>
+          <p>
+            就讀於<strong>智光商工</strong>的我，對商業世界充滿無限熱情。
+            在這個數位轉型的時代，我深刻理解商業、科技與數據三者的交融
+            才是未來的核心競爭力。
+          </p>
+          <p>
+            我不僅學習傳統的商業知識，更積極擁抱電子商務與智慧科技，
+            致力於成為能夠橫跨多個領域的現代數位商管人才。
+          </p>
+        </div>
+        <div class="about-card" id="about-passion">
+          <div class="card-glow"></div>
+          <div class="card-icon">🔥</div>
+          <h3>熱情所在</h3>
+          <ul class="passion-list">
+            <li><span class="passion-dot"></span>商業策略與市場分析</li>
+            <li><span class="passion-dot"></span>電子商務平台運營</li>
+            <li><span class="passion-dot"></span>人工智慧應用探索</li>
+            <li><span class="passion-dot"></span>網頁設計與開發</li>
+            <li><span class="passion-dot"></span>金融科技與數位支付</li>
+          </ul>
+        </div>
+        <div class="about-card" id="about-school">
+          <div class="card-glow"></div>
+          <div class="card-icon">🎓</div>
+          <h3>就讀學校</h3>
+          <div class="school-info">
+            <div class="school-name">智光商工</div>
+            <div class="school-dept">商業管理科</div>
+            <div class="school-badge">數位商管跨領域學習</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">// SKILL MATRIX</div>
+        <h2 class="section-title">技能矩陣</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-radar-wrapper">
+        <canvas id="radarChart" width="400" height="400"></canvas>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category" id="skill-doc">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">📄</div>
+            <h3>文書處理</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-name">Microsoft Word</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="82"></div>
+              </div>
+              <div class="skill-percent">82%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">Excel 試算表</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+              <div class="skill-percent">75%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">PowerPoint 簡報</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="78"></div>
+              </div>
+              <div class="skill-percent">78%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-type">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⌨️</div>
+            <h3>打字指法</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-name">中文輸入</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+              <div class="skill-percent">80%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">英文盲打</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="70"></div>
+              </div>
+              <div class="skill-percent">70%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">打字速度</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="72"></div>
+              </div>
+              <div class="skill-percent">72%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-finance">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💰</div>
+            <h3>金融專業</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-name">會計基礎</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="68"></div>
+              </div>
+              <div class="skill-percent">68%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">金融概論</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="65"></div>
+              </div>
+              <div class="skill-percent">65%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">商業數學</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="71"></div>
+              </div>
+              <div class="skill-percent">71%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-web">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🌐</div>
+            <h3>網頁開發</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-name">HTML / CSS</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="76"></div>
+              </div>
+              <div class="skill-percent">76%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="60"></div>
+              </div>
+              <div class="skill-percent">60%</div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-name">網頁設計</div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="74"></div>
+              </div>
+              <div class="skill-percent">74%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Journey -->
+  <section class="learning-section" id="learning">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">// LEARNING PATH</div>
+        <h2 class="section-title">學習旅程</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item left" id="tl1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <span class="tl-icon">📄</span>
+              <span class="tl-tag">PHASE 01</span>
+            </div>
+            <h3>文書處理精通</h3>
+            <p>掌握 Office 套件，培養高效的數位文書能力，從排版設計到數據分析，打造專業商業文件。</p>
+            <div class="tl-tech">
+              <span>Word</span><span>Excel</span><span>PowerPoint</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" id="tl2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <span class="tl-icon">⌨️</span>
+              <span class="tl-tag">PHASE 02</span>
+            </div>
+            <h3>打字指法訓練</h3>
+            <p>系統化學習正確打字姿勢與指法技巧，提升輸入速度與精確度，建立高效辦公基礎。</p>
+            <div class="tl-tech">
+              <span>盲打技術</span><span>速度訓練</span><span>中英輸入</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" id="tl3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <span class="tl-icon">💰</span>
+              <span class="tl-tag">PHASE 03</span>
+            </div>
+            <h3>金融專業深造</h3>
+            <p>深入學習金融基礎理論、會計原則與商業數學，為未來的商業決策奠定扎實的財務思維基礎。</p>
+            <div class="tl-tech">
+              <span>會計學</span><span>金融概論</span><span>商業數學</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" id="tl4">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-card active-card">
+            <div class="tl-header">
+              <span class="tl-icon">🌐</span>
+              <span class="tl-tag current">CURRENT</span>
+            </div>
+            <h3>網頁開發探索</h3>
+            <p>學習 HTML、CSS、JavaScript 等前端技術，結合商業思維打造具有商業價值的數位產品。</p>
+            <div class="tl-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left future" id="tl5">
+          <div class="timeline-dot future-dot"></div>
+          <div class="timeline-card future-card">
+            <div class="tl-header">
+              <span class="tl-icon">🚀</span>
+              <span class="tl-tag future-tag">FUTURE</span>
+            </div>
+            <h3>電商與AI整合</h3>
+            <p>整合所有知識，探索電子商務運營、人工智慧應用與數位行銷，成為全方位數位商管人才。</p>
+            <div class="tl-tech">
+              <span>電子商務</span><span>AI應用</span><span>數位行銷</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="vision-section" id="vision">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">// FUTURE VISION</div>
+        <h2 class="section-title">未來願景</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="vision-grid">
+        <div class="vision-card" id="vc1">
+          <div class="vision-icon">🏢</div>
+          <div class="vision-glow"></div>
+          <h3>商業經營</h3>
+          <p>以策略眼光分析市場趨勢，運用數據驅動商業決策，打造高效能的企業運營模式。</p>
+          <div class="vision-progress">
+            <div class="vp-bar" style="--target: 75%"></div>
+          </div>
+        </div>
+        <div class="vision-card" id="vc2">
+          <div class="vision-icon">🛒</div>
+          <div class="vision-glow"></div>
+          <h3>電子商務</h3>
+          <p>深耕電商生態系統，從平台運營到供應鏈管理，建立完整的數位商業閉環。</p>
+          <div class="vision-progress">
+            <div class="vp-bar" style="--target: 80%"></div>
+          </div>
+        </div>
+        <div class="vision-card" id="vc3">
+          <div class="vision-icon">🤖</div>
+          <div class="vision-glow"></div>
+          <h3>智慧科技</h3>
+          <p>擁抱人工智慧與自動化技術，將科技力量融入商業應用，創造更高的商業價值。</p>
+          <div class="vision-progress">
+            <div class="vp-bar" style="--target: 70%"></div>
+          </div>
+        </div>
+        <div class="vision-card" id="vc4">
+          <div class="vision-icon">🌏</div>
+          <div class="vision-glow"></div>
+          <h3>跨域整合</h3>
+          <p>跨越學科邊界，整合商業、科技、設計等多元知識，成為引領未來的複合型人才。</p>
+          <div class="vision-progress">
+            <div class="vp-bar" style="--target: 90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-quote">
+        <div class="quote-marks">"</div>
+        <p>在這個數位化浪潮席捲全球的時代，<br />唯有融合商業智慧與科技力量，才能在未來立於不敗之地。</p>
+        <div class="quote-author">— 我的座右銘</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">// CONNECT</div>
+        <h2 class="section-title">與我聯繫</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-card" id="cc1">
+            <div class="cc-icon">🎓</div>
+            <div class="cc-content">
+              <div class="cc-label">就讀學校</div>
+              <div class="cc-value">智光商工</div>
+            </div>
+          </div>
+          <div class="contact-card" id="cc2">
+            <div class="cc-icon">📚</div>
+            <div class="cc-content">
+              <div class="cc-label">學習方向</div>
+              <div class="cc-value">數位商管跨領域</div>
+            </div>
+          </div>
+          <div class="contact-card" id="cc3">
+            <div class="cc-icon">💡</div>
+            <div class="cc-content">
+              <div class="cc-label">核心興趣</div>
+              <div class="cc-value">商業 × 電商 × 科技</div>
+            </div>
+          </div>
+          <div class="contact-card" id="cc4">
+            <div class="cc-icon">🎯</div>
+            <div class="cc-content">
+              <div class="cc-label">目標</div>
+              <div class="cc-value">全方位數位商管人才</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal-box" id="terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+            </div>
+            <div class="terminal-title">biztech_profile.sh</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">whoami</span>
+            </div>
+            <div class="terminal-output">智光商工 數位商管學生</div>
+            <div class="terminal-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">cat skills.txt</span>
+            </div>
+            <div class="terminal-output">文書處理 | 打字指法 | 金融專業 | 網頁開發</div>
+            <div class="terminal-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">echo $PASSION</span>
+            </div>
+            <div class="terminal-output">電子商務 + 智慧科技 + 商業經營</div>
+            <div class="terminal-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">cat goal.txt</span>
+            </div>
+            <div class="terminal-output">成為全方位數位商管跨領域人才 🚀</div>
+            <div class="terminal-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cursor">▋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">BIZTECH</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-text">智光商工 · 數位商管跨領域人才 · 2026</p>
+      <div class="footer-line"></div>
+      <p class="footer-sub">商業 × 電商 × 智慧科技 · 用熱情驅動成長</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
